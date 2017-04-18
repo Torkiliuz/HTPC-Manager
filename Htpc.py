@@ -109,6 +109,8 @@ def load_modules():
     htpc.ROOT.rtorrent = RTorrent()
     from modules.plexpy import Plexpy
     htpc.ROOT.plexpy = Plexpy()
+    from modules.radarr import Radarr
+    htpc.ROOT.radarr = Radarr()
 
 def init_sched():
     from apscheduler.schedulers.background import BackgroundScheduler
